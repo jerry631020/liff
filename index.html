@@ -6,12 +6,6 @@
 
 {% block title %}Paint Sample{% endblock %}
 
-{% block content %}
-{% endblock %}
-
-{%- endblock metas %}
-
-<!--Add-->
 {% block scripts %}
 {{super()}}
   <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
@@ -27,19 +21,13 @@
     signaturePad.clear();
     });
  </script>
-{% endblock %}
-<!--End Add-->
 
-{% block title %}Paint Sample{% endblock %}
-
-<!--Add-->
 {% block content %}
 <div class="container">
   <canvas id="canvas"></canvas>
   <button id="btn" type="button" class="btn btn-primary btn-block">Share</button>
 </div>
 {% endblock %}
-<!--End Add-->
 
 <script>
     $(window).on('load', function(){
