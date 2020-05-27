@@ -13,6 +13,7 @@ def do_get():
     return render_template('index.html')
 if __name__ == '__main__':
     app.debug = True
+    app.run()
 
 # Add the following
 @app.route('/saveimage', methods=['POST'])
